@@ -388,7 +388,7 @@ class Stateadd extends State<Adding> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(title: Text("Mazre3na"),),
-       body: TabBarView(controller: tabController,children:[
+       body: TabBarView(physics: NeverScrollableScrollPhysics(),controller: tabController,children:[
          Form(key: keyfarmname,
            child: Center(child: Container(height: 250,child: Column(children :[Text("Mazre3na",style: TextStyle(fontSize: 50,fontStyle: FontStyle.italic,color: Colors.blueAccent),),
              Container(padding: EdgeInsets.only(left: 20),decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
